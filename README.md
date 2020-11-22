@@ -1,7 +1,7 @@
 # Homeautomation-using-Flutter-and-esp8266
 
-<img src="/screenshot/app.png" Height="300">
-<img src="/screenshot/circuit.jpg" Height="300">
+<img src="/screenshot/app.png" Height="500">
+<img src="/screenshot/circuit.jpg" Height="400">
 
 ## Getting Started
 
