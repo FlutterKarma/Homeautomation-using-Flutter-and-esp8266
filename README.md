@@ -3,6 +3,8 @@
 <img src="/screenshot/app.png" Height="500">
 <img src="/screenshot/circuit.jpg" Height="400">
 
+full youtube video: https://youtu.be/ayADXm3kN1Q
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
