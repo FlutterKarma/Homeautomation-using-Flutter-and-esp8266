@@ -1,11 +1,10 @@
-
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 ESP8266WebServer server(80);
 
 void handle404();
 
-#define LED_PIN     5
+#define LED_PIN   D3   // if D3 not work just use 3
 
 
 
@@ -15,7 +14,7 @@ void setup() {
 
   //WiFi-Setup
   Serial.begin(9600);
-  WiFi.begin("SSID", "PASSWORD");
+  WiFi.begin("SSID", "PASSWORD"); //enter your ssid , password
   Serial.print("Connecting");
   while (WiFi.status() != WL_CONNECTED)
   {
@@ -33,8 +32,8 @@ void setup() {
   
   server.begin();
    // power-up safety delay
-    pinMode(D3, OUTPUT);
-   digitalWrite(D3, HIGH);
+    pinMode(LED_PIN, OUTPUT);
+   digitalWrite(LED_PIN, HIGH);
     
 }
 
@@ -56,13 +55,13 @@ void handleStatus(){
 
 if(    server.arg("bulb")== bulboff){
   
-  digitalWrite(D3, HIGH);
+  digitalWrite(LED_PIN, HIGH);
   
   
   
   }else{
 
- digitalWrite(D3, LOW);
+ digitalWrite(LED_PIN, LOW);
 
     
   }
